@@ -26,7 +26,7 @@ export function Dashboard({ initialLinks }: DashboardProps) {
             } catch (error) {
                 console.error('Failed to poll links:', error)
             }
-        }, 300000)
+        }, 30000)
 
         return () => clearInterval(interval)
     }, [])
